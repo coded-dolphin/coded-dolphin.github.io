@@ -1,0 +1,273 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  overflow: overlay;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #004f64;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background : #bfd1d1;
+}
+
+::selection {
+  color: #bfd1d1;
+  background: #dc322f;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #001920;
+  color: #93a1a1;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  min-height: 100%;
+}
+
+a, li, button {
+  list-style: none;
+  text-decoration: none;
+  color: #93a1a1;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  width: 80%;
+  height: 24px;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 100px;
+}
+
+
+.logo span {
+  color: #dc322f;
+}
+
+.navlist li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.navlist li a {
+  transition: all .2s ease-in-out;
+}
+
+.navlist li a:hover {
+  color: #dc322f;
+}
+
+.cta {
+  padding: 10px 20px;
+  background-color: #dc322f;
+  color: #fdf6e3;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.cta:hover {
+  background-color: #dc322fc9;
+}
+
+.cta:active {
+  background-color: #dc322f99;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content : center;
+  text-align: center;
+  vertical-align: middle;
+  background: url(image/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.intro h1 {
+  color: cadetblue;
+  font-size: 50px;
+}
+
+.learn {
+  background: none;
+  border: solid;
+  border-width: 2px;
+  border-color: #bfd1d1;
+  color: #bfd1d1;
+  padding: 8px 18px;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+
+.learn:hover {
+  border: solid;
+  border-width: 2px;
+  border-color: #bfd1d1;
+  background-color: #bfd1d1;
+  color: #004f64;
+  padding: 8px 18px;
+}
+
+.hire {
+  background: #bfd1d1;
+  border: solid;
+  border-width: 2px;
+  border-color: #bfd1d1;
+  color: #004f64;
+  padding: 8px 18px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+
+.hire:hover {
+  background: none;
+  border: solid;
+  border-width: 2px;
+  border-color: #bfd1d1;
+  color: #bfd1d1;
+  padding: 8px 18px;
+}
+
+section {
+  min-height: 100vh;
+}
+
+#work {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+#work .works {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+}
+  
+#work .works > div {
+  background-color: cadetblue;
+  height: 300px;
+  width: 400px;
+  margin: 10px;
+} 
+
+#about {
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+}
+
+#about h2 {
+  padding: 30px 0;
+  text-align: center;
+  color: cadetblue;
+}
+
+.aboutme {
+  width: 60%;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+.forms {
+  display: flex;
+  justify-items: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  width: 50%;
+}
+
+/* Style for the form container */
+.form-container {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+/* Style for the form input fields */
+.form-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0px solid #ccc;
+  background-color: #004f64;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+-webkit-appearance: none;
+margin: 0;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+/* Style for the form submit button */
+.form-submit {
+  margin-top: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc322f;
+  color: #fdf6e3;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style for the form submit button when hovered */
+.form-submit:hover {
+  background-color: #dc322fc9;
+}
+
+.form-submit:active {
+  background-color: #dc322f99;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+}
