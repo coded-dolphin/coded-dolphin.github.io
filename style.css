@@ -226,6 +226,7 @@ img {
   padding: 10px;
   border: 0px solid #ccc;
   background-color: #004f64;
+  color: #fdf6e3;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;
@@ -240,6 +241,7 @@ margin: 0;
 
 input[type=number]
 {
+    appearance: textfield;
     -moz-appearance: textfield;
     margin: 0;
 }
