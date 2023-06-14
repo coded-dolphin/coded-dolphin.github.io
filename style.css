@@ -107,6 +107,7 @@ main {
   justify-content : center;
   text-align: center;
   vertical-align: middle;
+  background-image: url("image/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -230,9 +231,9 @@ img {
   width: 100%;
   margin-bottom: 10px;
   padding: 10px;
-  border: 0px solid #ccc;
-  background-color: #004f64;
-  color: #fdf6e3;
+  border: 0px solid #aaa;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 5px;
   font-size: 16px;
   box-sizing: border-box;
@@ -260,19 +261,19 @@ input[type=number]
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #dc322f;
-  color: #fdf6e3;
+  background-color: #A83AE4;
+  color: #000000;
   font-size: 16px;
   cursor: pointer;
 }
 
 /* Style for the form submit button when hovered */
 .form-submit:hover {
-  background-color: #dc322fc9;
+  background-color: #A83AE4c9;
 }
 
 .form-submit:active {
-  background-color: #dc322f99;
+  background-color: #A83AE499;
 }
 
 footer {
