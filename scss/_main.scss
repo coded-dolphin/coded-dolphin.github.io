@@ -1,0 +1,96 @@
+main {
+    padding-top: 113.797px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.rectangle1 {
+    position: absolute;
+    background-color: wheat;
+    height: 300px;
+    width: 400px;
+    top: 260px;
+    left: 120px;
+}
+
+.rectangle2 {
+    position: absolute;
+    background-color: rgb(109, 71, 0);
+    height: 400px;
+    width: 400px;
+    top: 380px;
+    left: 220px;
+}
+
+.rectangle3 {
+    position: absolute;
+    background-color: rgb(51, 35, 94);
+    height: 300px;
+    width: 500px;
+    top: 200px;
+    left: 300px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.name {
+    background-color: rgba(255, 0, 255, 0.322);
+    color: $secondary;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.intro {
+    width: 60%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.712);
+}
+
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    a{
+        padding: 10px 30px;
+        background-color: $primary;
+        color: $secondary;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: $secondary;
+        color: $primary;
+    }
+}

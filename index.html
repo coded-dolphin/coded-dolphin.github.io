@@ -1,70 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Sarbagya Nepal | Portfolio</title>
 </head>
 <body>
   <nav class="nav">
-    <a href="#" class="logo"><img src="image/logo.svg" alt="logo"></span></a>
+    <a href="#" class="logo">Sarbagya<span class="alt-logo">Nepal</span></a>
 
     <ul class="navlist">
-      <li><a href="#main">Home</a></li>
-      <li><a href="#work">Gallery</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">About</a></li>
     </ul>
 
-    <a href="#"><button type="button" class="cta">Contact</button></a>
+    <a href="#" class="cta-button">Contact</a>
   </nav>
-
-  <main id="main">
-    <div class="intro">
-     <p>Hello Everyone its a me ...</p> 
-     <h1>Sarbagya </h1>
-    </div>
-    <div class="buttons">
-      <a href="#about">
-        <button class="learn">Learn More</button>
-      </a>
-      <a href="#">
-        <button class="hire">Work with Me</button>
-      </a>
+  <main>
+    <div class="hero">
+      <div class="left">
+        <div class="rectangle1" id="rtl1" onclick="rtl1_clk1()"></div>
+        <div class="rectangle2" id="rtl2" onclick="rtl2_clk2()"></div>
+        <div class="rectangle3"id="rtl3" onclick="rtl3_clk3()"></div>
+      </div>
+      <div class="right">
+        <h1 class="heading">Welcome to the world of</h1>
+        <h2 class="name">Sarbagya Nepal</h2>
+        <p class="intro">Welcome to the world of captivating web experiences! I believe in the power of technology to transform ideas into immersive digital realities. Whether you're looking to elevate your online presence, craft a dynamic e-commerce platform, or revolutionize user engagement, I am here to make it happen. Join me on this digital journey and let's create something extraordinary together. Welcome to my web development wonderland!</p>
+        <div class="buttons">
+          <a href="#" class="button1">Learn More</a>
+          <a href="#" class="button2">Contact</a>
+        </div>
+      </div>
     </div>
   </main>
-
-  <section id="work">
-   <h2>My Works</h2>
-
-    <div class="works">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-  </section>
-
-  <section id="about">
-      <div class="aboutme">
-        <h2>Who I Am</h2>
-        <p>Hi, I'm Sarbagya Nepal, a Film maker. I specialize in cinematic video, and have 3 years of experience in the field.</p>
-        <p>When I'm not filming, you can find me drawing, writing or reading.</p>
-        <h2>What I Do</h2>
-        <p>I take videos of client and make a cinematic memory for them to remember for the rest of their life.</p>
-        <h2>Why Choose Me</h2>
-        <p>I'm passionate about creating the best memory for my clients and always strive to make my work even better than my previous one.</p>
-
-         [Your Strengths/Skills/Qualifications]<br>
-         [Your Achievements/Projects/Results]<br>
-         [Your Testimonials/Recommendations]<br>
-      </div>
-    </section>
-
-  <footer>
-    <p>Copyright © 2023 Sarbagya Nepal. All rights reserved.
-  </footer>
+  <script src="app/script.js"></script>
 </body>
 </html>
