@@ -1,100 +1,45 @@
 main {
-    padding-top: 113.797px;
-    height: 100%;
-    width: 100%;
+    padding-left: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to left top, #382a42, #1a0f18);
-}
-
-.hero {
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.left {
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-
-.rectangle1 {
-    position: absolute;
-    background-color: wheat;
-    height: 35%;
-    width: 40%;
-    top: 30%;
-    left: 12%;
-}
-
-.rectangle2 {
-    position: absolute;
-    background-color: rgb(109, 71, 0);
-    height: 40%;
-    width: 50%;
-    top: 48%;
-    left: 22%;
-}
-
-.rectangle3 {
-    position: absolute;
-    background-color: rgb(51, 35, 94);
-    height: 35%;
-    width: 50%;
-    top: 20%;
-    left: 30%;
-}
-
-.right {
-    width: 50%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-}
-
-.heading {
-    color: rgba(255, 255, 255, 0.856);
-    font-size: 16px;
-    text-transform: uppercase;
+    min-height: 100vh;
 }
 
 .name {
-    margin-top: 0;
-    background-color: rgba(255, 0, 255, 0.322);
-    color: $secondary;
-    font-size: 35px;
-    font-weight: 700;
-    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    color: $forground;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text{
+    height: 100%;
+    width: 50%;
+    padding-left: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-img{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-img img {
+    transform: scale(1.5);
 }
 
 .intro {
-    width: 60%;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.712);
-}
-
-.buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 50px;
-    a{
-        padding: 10px 30px;
-        background-color: $primary;
-        color: $secondary;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 600;
-        border-radius: 10px;
-    }
-
-    a:hover {
-        background-color: $secondary;
-        color: $primary;
-    }
+    color: $forground;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    font-family: 'Edu SA Beginner', cursive;
 }
