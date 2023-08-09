@@ -6,9 +6,23 @@ nav {
     background-color: $alt-background;
     position: fixed;
     justify-content: space-between;
-    padding: 1% .5%;
+    align-items: center;
+    padding: 1rem .5rem;
     box-shadow: 4px 0px 10px $box-shadow;
 }
+
+@media (max-width: 1500px){
+    nav {
+        width: 5%;
+    }
+}
+
+@media (max-width: 800px){
+    nav {
+        width: 10%;
+    }
+}
+
 
 .navlist, .socials{
     display: flex;
