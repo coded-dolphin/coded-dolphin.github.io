@@ -162,15 +162,15 @@ main {
 }
 
 .hero-img img {
-  animation: alternate infinite 2s shadow-animation;
+  animation: alternate infinite 1s shadow-animation;
 }
 
 @keyframes shadow-animation {
   0% {
-    filter: drop-shadow(0px 0 0px #1A202D);
+    filter: drop-shadow(-10px 10px 5px #430dc2);
   }
   100% {
-    filter: drop-shadow(1px 0 10px #430dc2);
+    filter: drop-shadow(10px 10px 5px #430dc2);
   }
 }
 .intro::before {
