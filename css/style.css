@@ -103,6 +103,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .name {
@@ -141,12 +142,47 @@ main {
     filter: drop-shadow(1px 0 10px #430dc2);
   }
 }
+.intro::before {
+  content: "<intro>";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  color: #D1D1D1;
+  filter: opacity(20%);
+  font-family: cursive;
+  font-size: 0.7rem;
+}
+
+.intro::after {
+  content: "</intro>";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 130px;
+  color: #D1D1D1;
+  filter: opacity(20%);
+  font-family: cursive;
+  font-size: 0.7rem;
+}
+
 .intro {
+  position: relative;
   color: #D1D1D1;
   font-size: 1.2rem;
   padding-left: 1.5rem;
   padding-right: 1rem;
   font-family: "Edu SA Beginner", cursive;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: #430dc2;
+  color: #D1D1D1;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 100vw;
+  cursor: pointer;
 }
 
 @media (max-width: 1385px) {
@@ -188,6 +224,7 @@ main {
   }
   .text {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -195,4 +232,23 @@ main {
   .name {
     font-size: 1.5rem;
   }
+}
+main::before {
+  content: "<main>";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #D1D1D1;
+  filter: opacity(20%);
+}
+
+main::after {
+  content: "</main>";
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: #D1D1D1;
+  filter: opacity(20%);
 }/*# sourceMappingURL=style.css.map */

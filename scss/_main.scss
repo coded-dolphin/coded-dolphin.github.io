@@ -4,6 +4,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .name {
@@ -43,12 +44,45 @@ main {
   }
 }
 
+.intro::before {
+  content: "<intro>";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  color: $forground;
+  filter: opacity(20%);
+  font-family: cursive;
+  font-size: 0.7rem;
+}
+.intro::after {
+  content: "</intro>";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 130px;
+  color: $forground;
+  filter: opacity(20%);
+  font-family: cursive;
+  font-size: 0.7rem;
+}
 .intro {
+  position: relative;
   color: $forground;
   font-size: 1.2rem;
   padding-left: 1.5rem;
   padding-right: 1rem;
   font-family: "Edu SA Beginner", cursive;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  background-color: $drop-shadow;
+  color: $forground;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 100vw;
+  cursor: pointer;
 }
 
 @media (max-width: 1385px) {
@@ -96,6 +130,7 @@ main {
 
   .text {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -104,4 +139,23 @@ main {
   .name {
     font-size: 1.5rem;
   }
+}
+
+main::before {
+  content: "<main>";
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: $forground;
+  filter: opacity(20%);
+}
+main::after {
+  content: "</main>";
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  color: $forground;
+  filter: opacity(20%);
 }
