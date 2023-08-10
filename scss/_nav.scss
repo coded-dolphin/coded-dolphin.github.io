@@ -12,7 +12,8 @@ nav {
   box-shadow: 4px 0px 10px $box-shadow;
 }
 
-.hamburger {
+.hamburger,
+.navlist li a span {
   display: none;
 }
 
@@ -47,16 +48,47 @@ nav {
     top: 0;
     position: sticky;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
     align-items: center;
   }
+  .navlist li a span {
+    display: inline;
+  }
+  .navlist li a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    color: $forground;
+    font-size: 1.6rem;
+  }
   .socials,
-  .logo {
+  .navlist {
     display: none;
   }
   .navlist {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $background;
+  }
+  .navlist li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
   }
 }

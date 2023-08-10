@@ -15,22 +15,26 @@
     <div class="body-wrapper">
       <nav>
         <a href="#" class="logo"><img src="images/logo.svg" alt="logo" /></a>
-        <ul class="navlist">
+        <ul class="navlist" id="navlist">
           <li>
-            <a href="#" class="home"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html" class="home"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
           </li>
           <li>
-            <a href="#" class="about"><i class="fa-solid fa-user"></i></a>
+            <a href="#" class="about"
+              ><i class="fa-solid fa-user"></i><span>About Me</span></a
+            >
           </li>
           <li>
             <a href="#" class="skills"
-              ><i class="fa-solid fa-list-check"></i
-            ></a>
+              ><i class="fa-solid fa-list-check"></i><span>My Skills</span></a
+            >
           </li>
           <li>
             <a href="#" class="contact"
-              ><i class="fa-solid fa-paper-plane"></i
-            ></a>
+              ><i class="fa-solid fa-paper-plane"></i><span>Contat Me</span></a
+            >
           </li>
         </ul>
         <div class="socials">
@@ -46,12 +50,15 @@
             </li>
           </ul>
         </div>
+        <div class="hamburger" onclick="ham()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
       <main>
         <div class="text">
           <p class="intro">Hello i am....</p>
           <h1 class="name"><img src="images/S.svg" alt="S" />arbagya Nepal</h1>
-          <a href="#"><button>Contatc Me</button></a>
+          <a href="#"><button>contact</button></a>
         </div>
         <div class="hero-img">
           <img src="images/hero-img.svg" alt="hero-img" />
