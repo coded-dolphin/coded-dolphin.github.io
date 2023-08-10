@@ -33,6 +33,8 @@ main {
 
 .hero-img img {
   animation: alternate infinite 1s shadow-animation;
+  height: 50%;
+  width: 50%;
 }
 
 @keyframes shadow-animation {
@@ -109,7 +111,13 @@ button {
     gap: 3rem;
   }
 
-  .text,
+  .text {
+    width: 100%;
+    min-height: 50vh;
+    padding: 0;
+    margin: 0;
+  }
+
   .hero-img {
     width: 100%;
     height: 50vh;
@@ -124,7 +132,6 @@ button {
   }
 
   .hero-img img {
-    transform: scale(0.9);
     width: 100%;
     height: 100%;
   }
