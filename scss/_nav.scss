@@ -1,48 +1,62 @@
 nav {
-    display: flex;
-    flex-direction: column;
-    width: 3%;
-    height: 100%;
-    background-color: $alt-background;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem .5rem;
-    box-shadow: 4px 0px 10px $box-shadow;
+  display: flex;
+  flex-direction: column;
+  width: 5vh;
+  height: 100%;
+  background-color: $alt-background;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  z-index: 9999;
+  box-shadow: 4px 0px 10px $box-shadow;
 }
 
-@media (max-width: 1500px){
-    nav {
-        width: 5%;
-    }
+.hamburger {
+  display: none;
 }
 
-@media (max-width: 800px){
-    nav {
-        width: 10%;
-    }
-}
-
-
-.navlist, .socials{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    align-items: center;
+.navlist,
+.socials {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
 }
 
 .navlist {
-    gap: 3rem;
+  gap: 3rem;
 }
 
 .socials-list {
-    gap: 2rem;
+  gap: 2rem;
 }
 
-.navlist li a, .socials-list li a {
-    color: $forground;
+.navlist li a,
+.socials-list li a {
+  color: $forground;
 }
 
 .socials-list li a {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px), (max-height: 650px) {
+  nav {
+    flex-direction: row;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials,
+  .logo {
+    display: none;
+  }
+  .navlist {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

@@ -23,27 +23,23 @@ body {
 nav {
   display: flex;
   flex-direction: column;
-  width: 3%;
+  width: 5vh;
   height: 100%;
   background-color: #202635;
   position: fixed;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.5rem;
+  z-index: 9999;
   box-shadow: 4px 0px 10px rgba(25, 8, 61, 0.7725490196);
 }
 
-@media (max-width: 1500px) {
-  nav {
-    width: 5%;
-  }
+.hamburger {
+  display: none;
 }
-@media (max-width: 800px) {
-  nav {
-    width: 10%;
-  }
-}
-.navlist, .socials {
+
+.navlist,
+.socials {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -58,7 +54,8 @@ nav {
   gap: 2rem;
 }
 
-.navlist li a, .socials-list li a {
+.navlist li a,
+.socials-list li a {
   color: #D1D1D1;
 }
 
@@ -66,6 +63,25 @@ nav {
   font-size: 1.5rem;
 }
 
+@media (max-width: 700px), (max-height: 650px) {
+  nav {
+    flex-direction: row;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials,
+  .logo {
+    display: none;
+  }
+  .navlist {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 main {
   padding-left: 3%;
   display: flex;
@@ -99,7 +115,6 @@ main {
 }
 
 .hero-img img {
-  transform: scale(1.5);
   animation: alternate infinite 2s shadow-animation;
 }
 
@@ -119,12 +134,14 @@ main {
   font-family: "Edu SA Beginner", cursive;
 }
 
-@media (max-width: 1024px) {
-  .hero-img img {
-    transform: scale(1);
-  }
+@media (max-width: 1385px) {
   .name {
-    font-size: 1.5rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1160px) {
+  .name {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 700px) {

@@ -1,105 +1,105 @@
 main {
-    padding-left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  padding-left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .name {
-    display: flex;
-    align-items: center;
-    font-size: 4rem;
-    color: $forground;
-    font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  color: $forground;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.text{
-    width: 50%;
-    display: flex;
-    padding-left: 10rem;
-    flex-direction: column;
-    gap: 2rem;
+.text {
+  width: 50%;
+  display: flex;
+  padding-left: 10rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.hero-img{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+.hero-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-img img {
-    transform: scale(1.5);
-    animation: alternate infinite 2s shadow-animation;
+  animation: alternate infinite 2s shadow-animation;
 }
 
 @keyframes shadow-animation {
-    0% {
-        filter: drop-shadow(0px 0 0px $background);
-    }
-    100% {
-        filter: drop-shadow(1px 0 10px $drop-shadow);
-    }
+  0% {
+    filter: drop-shadow(0px 0 0px $background);
   }
-
-
-.intro {
-    color: $forground;
-    font-size: 1.2rem;
-    padding-left: 1.5rem;
-    padding-right: 1rem;
-    font-family: 'Edu SA Beginner', cursive;
+  100% {
+    filter: drop-shadow(1px 0 10px $drop-shadow);
+  }
 }
 
-@media (max-width: 1024px) {
-    .hero-img img{
-        transform: scale(1);
-    }
+.intro {
+  color: $forground;
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  font-family: "Edu SA Beginner", cursive;
+}
 
-    .name{
-        font-size: 1.5rem;
-    }
+@media (max-width: 1385px) {
+  .name {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .name {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 700px) {
-    main {
-        padding-block: 2.5rem;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
-    }
+  main {
+    padding-block: 2.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
 
-    .text,
-    .hero-img {
-        width: 100%;
-        height: 50vh;
-        padding: 0;
-        margin: 0;
-    }
+  .text,
+  .hero-img {
+    width: 100%;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+  }
 
-    .hero-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .hero-img img {
-        transform: scale(0.9);
-    }
+  .hero-img img {
+    transform: scale(0.9);
+  }
 
-    .text{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .name {
-        font-size: 1.5rem;
-    }
+  .name {
+    font-size: 1.5rem;
+  }
 }
