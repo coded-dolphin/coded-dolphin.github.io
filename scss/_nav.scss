@@ -1,7 +1,7 @@
 nav {
   display: flex;
   flex-direction: column;
-  width: 5vh;
+  width: 6vh;
   height: 100%;
   background-color: $alt-background;
   position: fixed;
@@ -27,6 +27,24 @@ nav {
 
 .navlist {
   gap: 3rem;
+}
+
+.navlist li a:hover {
+  i {
+    display: none;
+  }
+  span {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "ubuntu";
+    text-decoration: 5px underline $drop-shadow;
+  }
+}
+
+.navlist li a {
+  text-decoration: none;
+  font: 1.5rem;
 }
 
 .socials-list {

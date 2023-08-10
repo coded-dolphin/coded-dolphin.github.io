@@ -13,6 +13,17 @@ main {
   font-size: 4rem;
   color: $forground;
   font-family: "Ubuntu", sans-serif;
+  animation: normal 2s slidedown;
+}
+
+@keyframes slidedown {
+  from {
+    transform: translatey(-1200%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 .text {
@@ -76,6 +87,17 @@ main {
   padding-left: 1.5rem;
   padding-right: 1rem;
   font-family: "Edu SA Beginner", cursive;
+  animation: normal 2s slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
 }
 
 button {
@@ -86,6 +108,22 @@ button {
   border: none;
   border-radius: 100vw;
   cursor: pointer;
+  animation: slide 2s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+button:hover {
+  opacity: 90%;
+  box-shadow: -1px -1px 10px $primary;
 }
 
 @media (max-width: 1385px) {
@@ -157,6 +195,7 @@ main::before {
   left: 10%;
   color: $forground;
   filter: opacity(20%);
+  font-family: cursive;
 }
 main::after {
   content: "</main>";
@@ -166,4 +205,5 @@ main::after {
   left: 10%;
   color: $forground;
   filter: opacity(20%);
+  font-family: cursive;
 }
