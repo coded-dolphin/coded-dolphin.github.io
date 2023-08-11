@@ -70,15 +70,18 @@ nav {
     padding: 0.2rem 2rem;
     align-items: center;
   }
-  .navlist li a span {
-    display: inline;
-  }
-  .navlist li a {
-    text-decoration: none;
-    font-size: 1rem;
+
+  .navlist li {
     display: flex;
-    font-family: "Ubuntu", sans-serif;
-    gap: 10px;
+    justify-content: center;
+    a {
+      gap: 10px;
+      display: flex;
+    }
+
+    a span {
+      display: block;
+    }
   }
 
   .hamburger {
@@ -86,27 +89,31 @@ nav {
     color: $forground;
     font-size: 1.6rem;
   }
-  .socials,
-  .navlist {
+  .socials {
     display: none;
   }
   .navlist {
-    width: 50%;
-    height: 100vh;
     position: absolute;
-    top: 100%;
+    width: 100%;
     right: 0;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    min-height: 100%;
+    top: 100%;
     background-color: $background;
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .navlist-active {
+    transform: translate(0);
+  }
+
+  .navlist li a:hover {
+    i {
+      display: inline;
+    }
   }
   .navlist li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
     padding: 1rem;
   }
 }

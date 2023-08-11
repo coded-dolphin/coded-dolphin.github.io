@@ -1,8 +1,6 @@
-function ham(){
-    n = document.querySelector(".navlist")
-    if (n.style.display === "block"){
-        n.style.display = "none"
-    } else {
-        n.style.display = "block"
-    }
-}
+const nav = document.querySelector(".navlist")
+const burger = document.querySelector('.hamburger')
+
+burger.addEventListener('click', ()=>{
+    nav.classList.toggle('navlist-active');
+});
