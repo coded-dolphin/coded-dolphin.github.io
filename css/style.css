@@ -138,7 +138,7 @@ nav {
     transition: transform 0.5s ease-in-out;
   }
   .navlist-active {
-    transform: translate(0);
+    transform: translate(0%);
   }
   .navlist li a:hover i {
     display: inline;
