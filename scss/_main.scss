@@ -1,209 +1,68 @@
 main {
-  padding-left: 3%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  position: relative;
-}
-
-.name {
-  display: flex;
-  align-items: center;
-  font-size: 4rem;
-  color: $forground;
-  font-family: "Ubuntu", sans-serif;
-  animation: normal 2s slidedown;
-}
-
-@keyframes slidedown {
-  from {
-    transform: translatey(-1200%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-.text {
-  width: 50%;
-  display: flex;
-  padding-left: 10rem;
   flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
   gap: 2rem;
-}
-
-.hero-img {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-img img {
-  animation: alternate infinite 1s shadow-animation;
-  height: 50%;
-  width: 50%;
-}
-
-@keyframes shadow-animation {
-  0% {
-    filter: drop-shadow(-10px 10px 5px $drop-shadow);
-  }
-
-  100% {
-    filter: drop-shadow(10px 10px 5px $drop-shadow);
-  }
-}
-
-.intro::before {
-  content: "<intro>";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -40px;
-  color: $forground;
-  filter: opacity(20%);
-  font-family: cursive;
-  font-size: 0.7rem;
-}
-.intro::after {
-  content: "</intro>";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 130px;
-  color: $forground;
-  filter: opacity(20%);
-  font-family: cursive;
-  font-size: 0.7rem;
-}
-.intro {
-  position: relative;
-  color: $forground;
-  font-size: 1.2rem;
-  padding-left: 1.5rem;
-  padding-right: 1rem;
-  font-family: "Edu SA Beginner", cursive;
-  animation: normal 2s slidein;
-}
-
-@keyframes slidein {
-  from {
-    transform: translateX(-50%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-button {
-  padding: 0.5rem 1.5rem;
-  background-color: $drop-shadow;
-  color: $forground;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 100vw;
-  cursor: pointer;
-  animation: slide 2s;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(-100%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
-}
-
-button:hover {
-  opacity: 90%;
-  box-shadow: -1px -1px 10px $primary;
-}
-
-@media (max-width: 1385px) {
-  .name {
+  padding: 10%;
+  h1 {
+    font-family: "Tektur";
     font-size: 3rem;
-  }
-}
-
-@media (max-width: 1160px) {
-  .name {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 700px) {
-  main {
-    padding-block: 2.5rem;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .text {
-    width: 100%;
-    min-height: 50vh;
-    padding: 0;
-    margin: 0;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 50vh;
-    padding: 0;
-    margin: 0;
-  }
-
-  .hero-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .text {
-    display: flex;
+    font-weight: 700;
     position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
+  h1::after {
+    content: "Web developer | UI/UX designer";
+    display: block;
+    position: absolute;
+    top: 100%;
+    color: $primary;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-family: "Orbitron";
+  }
+}
 
-  .name {
+.socials {
+  display: flex;
+  .social-list {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
     font-size: 1.5rem;
+    li a {
+      color: $forground;
+      transition: 0.2s ease-in-out;
+    }
+
+    li a:hover {
+      color: $primary;
+    }
   }
 }
 
-main::before {
-  content: "<main>";
-  display: block;
-  position: absolute;
-  top: 10%;
-  left: 10%;
+.contact {
+  text-decoration: none;
   color: $forground;
-  filter: opacity(20%);
-  font-family: cursive;
+  font-family: "Orbitron";
+  font-weight: 700;
+  background-color: none;
+  padding: 0.5rem 2rem;
+  border: 2px black solid;
+  align-self: flex-start;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: $primary;
+    box-shadow: 10px 10px $forground;
+  }
 }
-main::after {
-  content: "</main>";
-  display: block;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  color: $forground;
-  filter: opacity(20%);
-  font-family: cursive;
+
+.skew-fix {
+  display: inline-flex;
+  transform: skew(10deg);
+}
+
+.parallelogram {
+  transform: skew(-10deg);
 }

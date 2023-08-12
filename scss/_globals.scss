@@ -6,29 +6,11 @@
   margin: 0;
 }
 
-html {
-  overflow: overlay;
-}
-
 body {
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 .body-wrapper {
   min-height: 100vh;
   background-color: $background;
-}
-
-::-webkit-scrollbar {
-  width: 0.3rem;
-}
-
-::-webkit-scrollbar-track {
-  background: $alt-background;
-}
-
-::-webkit-scrollbar-thumb {
-  background: $drop-shadow;
-  border: $alt-background 0.1rem solid;
 }
